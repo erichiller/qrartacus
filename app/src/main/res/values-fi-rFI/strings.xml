@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">qratacus</string>
+    <string name="btn_edit">Kirjoita viesti</string>
+    <string name="btn_send">Lähetä</string>
+    <string name="welcome_friend">Tervetuloa ystäväsi!</string>
+</resources>
