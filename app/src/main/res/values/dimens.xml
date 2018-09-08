@@ -2,4 +2,8 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Added for Menu -->
+    <dimen name="recycler_view_width">240dp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
+    <dimen name="fragment_imageview_padding">32dp</dimen>
 </resources>

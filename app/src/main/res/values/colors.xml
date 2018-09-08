@@ -3,4 +3,6 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <!-- added for Menu -->
+    <color name="list_item_text_color">#fff</color>
 </resources>

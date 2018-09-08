@@ -3,4 +3,12 @@
     <string name="btn_edit">Enter a message</string>
     <string name="btn_send">Send</string>
     <string name="welcome_friend">Welcome Friend!</string>
+    <string name="action_websearch">Search</string>
+
+    <!-- added for menu -->
+    <string name="slideshow">Search</string>
+    <string name="tools">Search</string>
+    <string name="gallery">Search</string>
+    <string name="importResource">Search</string>
+
 </resources>

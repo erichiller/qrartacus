@@ -1,22 +1,13 @@
 package pro.hiller.qratacus
 
-import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.support.v4.app.FragmentActivity
-import android.util.Log
-import android.view.View
+import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
-import kotlinx.android.synthetic.main.activity_google_login.view.*
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
-import com.google.android.gms.tasks.Task
-import com.google.android.gms.common.api.ApiException
-
 
 
 const val GOOGLE_LOGIN_REQUEST = 42
