@@ -1,41 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--xmlns:tools="http://schemas.android.com/tools"-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="match_parent"-->
-<!--tools:context=".MainActivity">-->
-
-<!--<EditText-->
-<!--android:id="@+id/editText"-->
-<!--android:layout_width="0dp"-->
-<!--android:layout_height="46dp"-->
-<!--android:layout_marginStart="16dp"-->
-<!--android:layout_marginTop="16dp"-->
-<!--android:layout_marginEnd="16dp"-->
-<!--android:ems="10"-->
-<!--android:hint="@string/btn_edit"-->
-<!--android:inputType="textPersonName"-->
-<!--android:text="@string/btn_edit"-->
-<!--app:layout_constraintEnd_toStartOf="@+id/button"-->
-<!--app:layout_constraintHorizontal_bias="0.5"-->
-<!--app:layout_constraintStart_toStartOf="parent"-->
-<!--app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--<Button-->
-<!--android:id="@+id/button"-->
-<!--android:layout_width="wrap_content"-->
-<!--android:layout_height="wrap_content"-->
-<!--android:layout_marginEnd="16dp"-->
-<!--android:onClick="sendMessage"-->
-<!--android:text="@string/btn_send"-->
-<!--app:layout_constraintBaseline_toBaselineOf="@+id/editText"-->
-<!--app:layout_constraintEnd_toEndOf="parent"-->
-<!--app:layout_constraintHorizontal_bias="0.5"-->
-<!--app:layout_constraintStart_toEndOf="@+id/editText" />-->
-
-<!--</android.support.constraint.ConstraintLayout>-->
 <!--
   Copyright 2018 The Android Open Source Project
 
@@ -71,52 +34,15 @@
         <!--android:layout_height="match_parent">-->
 
         <!--<android.support.v7.widget.Toolbar-->
-            <!--android:id="@+id/toolbar"-->
+            <!--android:id="@+id/actionbar"-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="?attr/actionBarSize"-->
             <!--android:background="?attr/colorPrimary"-->
             <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />-->
 
     <!--</FrameLayout>-->
+    <include layout="@layout/home" />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical" >
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:ems="10"
-            android:hint="@string/btn_edit"
-            android:inputType="textPersonName"
-            android:text="@string/btn_edit"
-            app:layout_constraintEnd_toStartOf="@+id/button"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:onClick="sendMessage"
-            android:text="@string/btn_send"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/editText" />
-    </LinearLayout>
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat
          this as a sliding drawer on the left side for left-to-right
@@ -124,6 +50,10 @@
          The drawer is given a fixed width in dp and extends the full height of
          the container. A solid background is used for contrast
          with the content view. -->
+    <!-- See layout_gravity docs
+    https://developer.android
+    .com/reference/android/widget/LinearLayout.LayoutParams.html#attr_android:layout_gravity -->
+
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

@@ -16,11 +16,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/mStatusTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/welcome_friend"
+        android:text="@string/msg_please_sign_in"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"

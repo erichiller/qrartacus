@@ -4,7 +4,7 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_photo_camera_black_24dp"
-            android:title="@string/importResource" />
+            android:title="@string/camera" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_photo_library_black_24dp"
@@ -16,6 +16,14 @@
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_settings_black_24dp"
-            android:title="@string/tools" />
+            android:title="@string/configure"
+            android:onClick="menuSelectSettings"
+            />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="@string/menu_account"
+            android:onClick="menuSelectAccount"
+            />
     </group>
 </menu>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="pro.hiller.qratacus">
+    package="pro.hiller.qratacus">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -14,18 +14,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!-- enable the search dialog to send searches to SearchableActivity -->
+        <meta-data android:name="android.app.default_searchable"
+            android:value=".SearchableActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DisplayMessageActivity"
-                  android:parentActivityName=".MainActivity" />
-        <activity android:name=".GoogleLoginActivity"
-                  android:parentActivityName=".MainActivity" />
-        <activity android:name=".GoogleLoginResultActivity"
-                  android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".GoogleLoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".SearchableActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
     </application>
 
 </manifest>
