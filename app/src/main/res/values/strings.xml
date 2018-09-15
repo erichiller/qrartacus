@@ -1,7 +1,7 @@
 <resources>
     <!--<string name="server_client_id">ZFY-QlHETJjjg0s1C_W-VBbj</string>-->
 
-    <string name="app_name">qratacus</string>
+    <string name="app_name">QRtacus</string>
     <string name="btn_edit">Enter a message</string>
     <string name="btn_send">Send</string>
     <string name="msg_please_sign_in">Please Sign In</string>
@@ -18,5 +18,7 @@
     <string name="configure">Settings</string>
     <string name="menu_account">Account</string>
 
+    <!-- NASA APOD Images -->
+    <string name="api_key">ltUST8boq0UJ0fhTSD4ZeDiXpOg9KiA9dwPPodAZ</string>
 
 </resources>

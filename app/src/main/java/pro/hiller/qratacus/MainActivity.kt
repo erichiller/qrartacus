@@ -51,15 +51,12 @@ class MainActivity : AppCompatActivity() {
                     override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
                         // Respond when the drawer's position changes
                     }
-
                     override fun onDrawerOpened(drawerView: View) {
                         // Respond when the drawer is opened
                     }
-
                     override fun onDrawerClosed(drawerView: View) {
                         // Respond when the drawer is closed
                     }
-
                     override fun onDrawerStateChanged(newState: Int) {
                         // Respond when the drawer motion state changes
                     }
@@ -93,6 +90,14 @@ class MainActivity : AppCompatActivity() {
         Log.v(TAG, "menuSelectAccount()")
 
         val intent = Intent(this, GoogleLoginActivity::class.java)
+        startActivity(intent)
+    }
+
+    //temp
+    fun menuSelectSearcher(item: MenuItem) {
+        Log.v(TAG, "menuSelectSearcher()")
+
+        val intent = Intent(this, SearchableActivity::class.java)
         startActivity(intent)
     }
 
